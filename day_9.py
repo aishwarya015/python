@@ -96,3 +96,20 @@ def string_both_ends(input_string):
 
 input_string="w3w"
 print(string_both_ends(input_string))
+
+#PF-Prac-11
+def find_upper_and_lower(sentence):
+    upper=0
+    lower=0
+    for i in sentence:
+        if(i>="a" and i<="z"):
+            lower+=1
+        if(i>="A" and i<="Z"):
+            upper+=1
+        result_list=[]
+        result_list.append(upper)
+        result_list.append(lower)
+    return result_list
+
+sentence="Come Here"
+print(find_upper_and_lower(sentence))
