@@ -72,3 +72,16 @@ def seed_no(number,ref_no):
 number=123
 ref_no=738
 print(seed_no(number,ref_no))
+
+#PF-Prac-10
+def string_both_ends(input_string):
+    length=len(input_string)
+    if(length<2):
+        return -1
+    else:
+        str=" "
+        str=input_string[0:2]+input_string[-2:]
+        return str
+
+input_string="w3w"
+print(string_both_ends(input_string))
