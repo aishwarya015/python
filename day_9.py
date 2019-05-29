@@ -157,3 +157,15 @@ def check_22(num_list):
             return False
         
 print(check_22([3,2,5,1,2,1,2,2]))
+
+
+#PF-Tryout 22
+def diagonal_stars(number):
+    for i in range (0,number):
+        for j in range(i):
+            print(".",end=" ")
+        print("*")
+ 
+
+number=5    
+diagonal_stars(number)
