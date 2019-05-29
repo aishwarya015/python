@@ -169,3 +169,19 @@ def diagonal_stars(number):
 
 number=5    
 diagonal_stars(number)
+
+
+#PF-Prac-23
+def divisible_by_sum(number):
+    temp=number
+    sum=0
+    while(number>0):
+        rem=number%10
+        number=number//10
+        sum=sum+rem
+    if(temp%sum==0):
+        return True
+    else:
+        return False
+number=42
+print(divisible_by_sum(number))
